@@ -285,8 +285,7 @@ Structure the response with the following HTML tags:
         try {
             const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
             const payload = { contents: chatHistory };
-            const apiKey = "AIzaSyA2FYXgwVfCsZ4g6io_JdAU-luNBArl198"; // Populated by the environment
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+            const apiUrl = 'https://gkey.netlify.app/.netlify/functions/explain';
             
             const response = await fetch(apiUrl, {
                 method: 'POST',
