@@ -281,6 +281,7 @@ Structure the response with the following HTML tags:
 - <strong> for emphasis.
 - For all LaTeX mathematical expressions, wrap them in a <span> tag. Do not use Markdown. For example: <span>$E=mc^2$</span> or <span>$$\\sum_{i=0}^{n} i = \\frac{n(n+1)}{2}$$</span>
 `;
+
             
         try {
             const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
